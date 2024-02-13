@@ -41,7 +41,7 @@ that you've understood the concept. Add your answer to this markdown file.
 
 ## Analysis
 
-For reverseInsertionSort the best-case time complexity would be $\Theta(n)$ and for the worse-case we would have a time complexity of $\Theta(n)$.
+For $reverseInsertionSort(a)$ the best-case time complexity would be $\Theta(n)$ and for the worse-case we would have a time complexity of $\Theta(n)$.
 
 We start by iterating through each element inside the array except the last element. This gives a best/worst case time complexity of $\Theta(n - 1) = \Theta(n)$. 
 
