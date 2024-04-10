@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Bi-S25fM)
 # Reverse Insertion Sort
 
 Consider the code for insertion sort we covered in class:
@@ -36,3 +37,21 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+
+## Analysis
+
+For $reverseInsertionSort(a)$ the best-case time complexity would be $\Theta(n)$ and for the worse-case we would have a time complexity of $\Theta(n^2)$.
+
+We start by iterating through each element inside the array except the last element. This gives a best/worst case time complexity of $\Theta(n - 1) = \Theta(n)$. 
+
+The inner loop will iterate from the $i + 1$ element until the end of the array so long as the $a[j] < a[i]$. This will set $j$ to be the index at which to move the value of $a[i]$ to.
+
+In the worst case we will *always* traverse the entire subsection of the array. This gives a time complexity of $\Theta(n^2)$ for our worst case.
+
+In the best case the elements are already sorted and the inner loop does no iterations. This would yield a time complexity of $\Theta(n)$.
+
+| Method                    | Best Case     | Worst Case    |
+| ------------------------- | ------------- | ------------- |
+| $insertionSort(a)$        | $\Theta(n)$   | $\Theta(n^2)$ |
+| $reverseInsertionSort(a)$ | $\Theta(n)$   | $\Theta(n^2)$ |
